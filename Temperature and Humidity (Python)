@@ -1,0 +1,10 @@
+import random
+for i in range(25):
+    Temperature=random.randint(0,150)
+    Humidity=random.randint(0,100)
+    if Humidity>50 and Temperature>100:
+        print("Temperature: "+str(Temperature)+"\nHumidity: "+str(Humidity)+"-HIGH")
+    elif Humidity<50 and Temperature<100:
+        print("Temperature: "+str(Temperature)+"\nHumidity: "+str(Humidity)+"-LOW")
+    else:
+        continue
